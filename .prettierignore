@@ -1,2 +1,7 @@
 node_modules
 package-lock.json
+
+# Older lessons contain intentional pseudo-code snippets that Prettier cannot parse
+Lessons/lesson_4/lesson_4.js
+Lessons/lesson_7/lesson_7.js
+Lessons/lesson_11/lesson_11.js

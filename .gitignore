@@ -1,1 +1,9 @@
 /node_modules
+
+# Generated test reports
+reports/
+
+# Secrets / local environment
+.env
+.env.*
+!.env.example
