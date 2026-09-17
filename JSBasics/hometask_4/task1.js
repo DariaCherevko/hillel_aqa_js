@@ -1,10 +1,10 @@
 //Завдання 1: Оголошення змінних для примітивних типів
 
-let firstName = "Daria";
-let lastName = null;
-let age = 28;
-let isStudent = true;
-let mobilePhone = undefined;
+const firstName = 'Daria';
+const lastName = null;
+const age = 28;
+const isStudent = true;
+const mobilePhone = undefined;
 
 console.log(firstName);
 console.log(lastName);

@@ -1,24 +1,47 @@
 {
-  "name": "hillel",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DariaCherevko/hillel_aqa_js.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
-  "bugs": {
-    "url": "https://github.com/DariaCherevko/hillel_aqa_js/issues"
-  },
-  "homepage": "https://github.com/DariaCherevko/hillel_aqa_js#readme",
-  "description": "",
-  "dependencies": {
-    "chalk": "^5.6.2"
-  }
+	"name": "hillel",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"format": "prettier . --write",
+		"format:check": "prettier . --check",
+		"prepare": "husky"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/DariaCherevko/hillel_aqa_js.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"bugs": {
+		"url": "https://github.com/DariaCherevko/hillel_aqa_js/issues"
+	},
+	"homepage": "https://github.com/DariaCherevko/hillel_aqa_js#readme",
+	"description": "",
+	"dependencies": {
+		"chalk": "^5.6.2"
+	},
+	"devDependencies": {
+		"@eslint/js": "^10.0.1",
+		"eslint": "^10.10.0",
+		"eslint-config-prettier": "^10.1.8",
+		"globals": "^17.12.0",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.4.0",
+		"prettier": "3.9.6"
+	},
+	"lint-staged": {
+		"*.{js,mjs,cjs}": [
+			"eslint --fix",
+			"prettier --write"
+		],
+		"*.{json,html,css,scss,md,yml,yaml}": [
+			"prettier --write"
+		]
+	}
 }

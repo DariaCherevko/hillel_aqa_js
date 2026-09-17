@@ -1,7 +1,7 @@
 //Завдання 4.2
-let length = 25;
-let width = 15;
+const length = 25;
+const width = 15;
 
-let rectangleArea = length * width;
+const rectangleArea = length * width;
 
 console.log(rectangleArea.toFixed(2));

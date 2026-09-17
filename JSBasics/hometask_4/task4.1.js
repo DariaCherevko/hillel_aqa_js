@@ -1,6 +1,6 @@
 //Завдання 4.1
-let radius = 20;
+const radius = 20;
 
-let circleArea = Math.PI * Math.pow(radius, 2); 
+const circleArea = Math.PI * Math.pow(radius, 2);
 
 console.log(circleArea.toFixed(2));
